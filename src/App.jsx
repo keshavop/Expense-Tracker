@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Analytics } from '@vercel/analytics/react';
 
 // Library
 import { ToastContainer } from "react-toastify";
@@ -67,6 +68,7 @@ function App() {
     <div className="App">
       <RouterProvider router={router} />
       <ToastContainer />
+      <Analytics />
     </div>
   );
 }
